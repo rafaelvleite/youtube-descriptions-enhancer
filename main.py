@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import time
-import random
 import pickle
 import pandas as pd
 from dotenv import load_dotenv, find_dotenv
@@ -11,7 +10,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from openai import OpenAI, OpenAIError
 from retry import retry
-from datetime import datetime, date
+from datetime import datetime
 
 # Load environment variables
 load_dotenv(find_dotenv(), override=True)
